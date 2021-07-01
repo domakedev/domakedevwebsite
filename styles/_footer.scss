@@ -1,0 +1,24 @@
+footer{
+    width: 100%;
+    height: 175px;
+    background-color: $gris-oscuro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.social_media{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 43px;
+
+}
+
+.footer_text{
+    font-size:$footer-text-size;
+    color: white ;
+}
