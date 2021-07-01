@@ -1,0 +1,126 @@
+/*mixins*/
+@mixin loader_bar($color, $load) {
+  background: $color;
+  animation: $load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  height: 15px;
+  width: 0;
+}
+
+@keyframes load-html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes load-css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes load-js {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+/*-----*/
+
+.skills {
+  background-color: $azul-oscuro;
+}
+
+.skills_title {
+  color: white;
+  font-size: $titulo-size;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skill_cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.skill_card {
+  background-color: $gris-claro;
+  border-radius: $normal-radius;
+  display: flex;
+  padding: 15px;
+  width: 90%;
+  //min-width: 250px;
+  max-width: 350px;
+}
+
+.skill_card_img {
+  width: 42px;
+  margin-right: 10px;
+}
+
+.skill_card_data {
+  width: 100%;
+}
+
+.skill_card_texts {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: $skills-text-size;
+}
+
+.skill_card_title {
+  color: white;
+}
+
+.skill_card_percent-html {
+  color: $rojo;
+  //font-weight: bold;
+}
+.skill_card_percent-CSS {
+  color: $celeste;
+  //font-weight: bold;
+}
+.skill_card_percent-Js {
+  color: $amarillo;
+  //font-weight: bold;
+}
+
+.skill_card_progress {
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  //padding: 0 5px;
+  display: flex;
+  height: 15px;
+  width: 100%;
+}
+
+.skill_card_progress_value-html {
+  @include loader_bar($rojo, load-html);
+}
+
+.skill_card_progress_value-CSS {
+  @include loader_bar($celeste, load-css);
+}
+
+.skill_card_progress_value-Js {
+    @include loader_bar($amarillo, load-js);
+  }

@@ -120,11 +120,195 @@ header {
   color: #96a7af;
   font-size: 1.8rem;
   text-align: center;
-  margin: 20px auto;
+  margin: 20px 20px 20% 20px;
+  padding: 20px auto;
 }
 
 .presentation_wave {
-  bottom: 0px;
+  position: absolute;
+  bottom: -1px;
   width: 100%;
+}
+
+/*mixins*/
+@-webkit-keyframes load-html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes load-html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes load-css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes load-css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@-webkit-keyframes load-js {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes load-js {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+/*-----*/
+.skills {
+  background-color: #011627;
+}
+
+.skills_title {
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skill_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.skill_card {
+  background-color: #2f424e;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  width: 90%;
+  max-width: 350px;
+}
+
+.skill_card_img {
+  width: 42px;
+  margin-right: 10px;
+}
+
+.skill_card_data {
+  width: 100%;
+}
+
+.skill_card_texts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+.skill_card_title {
+  color: white;
+}
+
+.skill_card_percent-html {
+  color: #ff685e;
+}
+
+.skill_card_percent-CSS {
+  color: #38b6ff;
+}
+
+.skill_card_percent-Js {
+  color: #ffc342;
+}
+
+.skill_card_progress {
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15px;
+  width: 100%;
+}
+
+.skill_card_progress_value-html {
+  background: #ff685e;
+  -webkit-animation: load-html 3s normal forwards;
+          animation: load-html 3s normal forwards;
+  -webkit-box-shadow: 0 10px 40px -10px #fff;
+          box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  height: 15px;
+  width: 0;
+}
+
+.skill_card_progress_value-CSS {
+  background: #38b6ff;
+  -webkit-animation: load-css 3s normal forwards;
+          animation: load-css 3s normal forwards;
+  -webkit-box-shadow: 0 10px 40px -10px #fff;
+          box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  height: 15px;
+  width: 0;
+}
+
+.skill_card_progress_value-Js {
+  background: #ffc342;
+  -webkit-animation: load-js 3s normal forwards;
+          animation: load-js 3s normal forwards;
+  -webkit-box-shadow: 0 10px 40px -10px #fff;
+          box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  height: 15px;
+  width: 0;
 }
 /*# sourceMappingURL=styles.css.map */
