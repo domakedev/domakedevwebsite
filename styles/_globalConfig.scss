@@ -1,0 +1,41 @@
+/*Colores*/
+$azul-oscuro: #011627; 
+$amarillo: #ffc342; 
+$gris-claro: #2f424e; 
+$gris-oscuro: #1e323d; 
+$rojo: #ff685e; 
+$celeste: #38b6ff; 
+$naranja: #ff9e47; 
+$azul-electrico: #0061ff; 
+$parrafo-text-color: #96a7af; 
+$titulo-text-color: #fff; 
+
+/*Textos*/
+$font-family: Roboto;
+$titulo-size: 2.4rem; 
+$parrafo-size: 1.8rem; 
+$boton_text-size: 1.6rem; 
+
+/*Sombras*/
+$button-red-shadow:  0px 0px 14px rgba(255, 104, 94, 0.33);;
+$button-dark-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);;
+
+/*Border radius*/
+$small-radius: 12px;
+$normal-radius: 25px;
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+
+
+
