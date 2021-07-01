@@ -1,0 +1,50 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $gris-oscuro;
+    height: 75px;
+}
+
+.header_button{
+    color:$button-text-color;
+    font-family: $font-family;
+    font-size:$boton_text-size;
+    padding: $padding-button;
+    border-radius: $small-radius;
+    border: none;
+    cursor: pointer;  
+    transition: all .2s;
+    width: 122px;
+    height: 31px;
+
+}
+
+.header_button-red{
+    background-color: $rojo;
+    box-shadow: $button-red-shadow;
+}
+
+.header_button-red:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(240, 89, 89, 0.2);
+}
+
+.header_button-dark{
+    background-color: $gris-claro;
+    box-shadow: $button-dark-shadow;
+}
+
+.header_button-dark:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header_logo{
+    width: 55px;
+    height: 55px;
+    border-radius: $small-radius;
+    box-shadow: $button-dark-shadow;
+    cursor: pointer;
+}
+

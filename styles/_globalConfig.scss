@@ -9,9 +9,9 @@ $naranja: #ff9e47;
 $azul-electrico: #0061ff; 
 $parrafo-text-color: #96a7af; 
 $titulo-text-color: #fff; 
+$button-text-color: #fff; 
 
 /*Textos*/
-$font-family: Roboto;
 $titulo-size: 2.4rem; 
 $parrafo-size: 1.8rem; 
 $boton_text-size: 1.6rem; 
@@ -24,6 +24,12 @@ $button-dark-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);;
 $small-radius: 12px;
 $normal-radius: 25px;
 
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+$font-family: 'Roboto', sans-serif;
+
+/*Paddings*/
+$padding-button:6px 25px;
 
 *{
     box-sizing: border-box;
@@ -33,6 +39,7 @@ $normal-radius: 25px;
 
 html{
     font-size: 62.5%;
+    font-family: $font-family;
 }
 
 
