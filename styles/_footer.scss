@@ -15,10 +15,14 @@ footer{
     display: flex;
     justify-content: center;
     gap: 43px;
+}
 
+.social_media img{
+    height:35px;
 }
 
 .footer_text{
     font-size:$footer-text-size;
     color: white ;
+    margin-bottom: 12px;
 }

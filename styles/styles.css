@@ -345,8 +345,13 @@ footer {
   gap: 43px;
 }
 
+.social_media img {
+  height: 35px;
+}
+
 .footer_text {
   font-size: 1.4rem;
   color: white;
+  margin-bottom: 12px;
 }
 /*# sourceMappingURL=styles.css.map */
