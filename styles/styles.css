@@ -247,7 +247,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   padding: 15px;
-  width: 90%;
+  width: 100%;
   max-width: 350px;
 }
 
@@ -336,6 +336,10 @@ header {
   border-radius: 100px;
   height: 15px;
   width: 0;
+}
+
+.skill_image {
+  display: none;
 }
 
 footer {

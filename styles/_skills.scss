@@ -63,8 +63,7 @@
   border-radius: $normal-radius;
   display: flex;
   padding: 15px;
-  width: 90%;
-  //min-width: 250px;
+  width: 100%;
   max-width: 350px;
 }
 
@@ -125,3 +124,7 @@
 .skill_card_progress_value-Js {
     @include loader_bar($amarillo, load-js);
   }
+
+.skill_image{
+  display: none;
+}
