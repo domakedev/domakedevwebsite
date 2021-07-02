@@ -1,0 +1,14 @@
+@import "../header";
+
+.header_logo{
+    width: 110px;
+    height: auto;
+    border-radius: $small-radius;
+    box-shadow: $button-dark-shadow;
+    cursor: pointer;
+}
+
+header{
+    height: 118px;
+}
+

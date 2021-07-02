@@ -8,6 +8,13 @@
     position: relative;
 }
 
+.presentation_data{
+    margin-bottom: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .presentation_logotipo{
     width: 290px;
     height:auto;
@@ -20,17 +27,22 @@
     margin: 30px auto;
 }
 
+.presentation_texts{
+    margin-bottom: 20%;
+}
+
 .presentation_saludo{
     color: $titulo-text-color;
     font-size: $titulo-size;
     margin: 20px auto;
+    text-align: center;
 }
 
 .presentation_description{
     color:$parrafo-text-color;
     font-size: $parrafo-size;
     text-align: center;
-    margin: 20px 20px 20% 20px;
+    margin: 20px 20px 20px 20px;
     padding: 20px auto;
 
 }
