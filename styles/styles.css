@@ -255,6 +255,28 @@ header {
   background-color: #ddd;
 }
 
+.sw_dark_mode_label {
+  position: relative;
+}
+
+.sw_dark_mode_label .textito_light {
+  position: absolute;
+  top: 6px;
+  left: -53px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #1e323d;
+}
+
+.sw_dark_mode_label .textito_dark {
+  position: absolute;
+  top: 6px;
+  right: -53px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #ddd;
+}
+
 .presentation {
   display: -webkit-box;
   display: -ms-flexbox;
