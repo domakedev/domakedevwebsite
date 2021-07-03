@@ -42,7 +42,35 @@ $padding-button:6px 25px;
 html{
     font-size: 62.5%;
     font-family: $font-family;
+    //background-color: $gris-oscuro;
 }
+
+body{
+    background-color:  #ddd;
+    transition: 1s;
+}
+
+.dark-mode{
+
+    background-color: #1e323d !important;
+  }
+
+.light-mode{
+    background-color:  #ddd !important;
+  }
+
+  .dark-mode_text{
+    color: #ddd !important;
+
+  }
+
+.light-mode_text{
+    color: #222 !important;
+  }
+
+
+
+
 
 
 

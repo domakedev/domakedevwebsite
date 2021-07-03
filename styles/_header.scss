@@ -8,7 +8,9 @@ header{
     position: sticky;
     top: -1px;
     z-index: 1;
-    box-shadow:$button-dark-shadow;
+    //box-shadow:$button-dark-shadow;
+    transition: 1s;
+    background-color: #ddd;
 }
 
 .header_button{

@@ -17,6 +17,28 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background-color: #ddd;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.dark-mode {
+  background-color: #1e323d !important;
+}
+
+.light-mode {
+  background-color: #ddd !important;
+}
+
+.dark-mode_text {
+  color: #ddd !important;
+}
+
+.light-mode_text {
+  color: #222 !important;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,8 +54,9 @@ header {
   position: sticky;
   top: -1px;
   z-index: 1;
-  -webkit-box-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);
-          box-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #ddd;
 }
 
 .header_button {
@@ -265,11 +288,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-color: #1e323d;
+  background-color: #ddd;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .presentation_data {
@@ -290,6 +315,9 @@ header {
   width: 290px;
   height: auto;
   margin: 30px auto;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);
+          box-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);
 }
 
 .presentation_img {
@@ -303,14 +331,14 @@ header {
 }
 
 .presentation_saludo {
-  color: #fff;
+  color: #222;
   font-size: 2.4rem;
   margin: 20px auto;
   text-align: center;
 }
 
 .presentation_description {
-  color: #96a7af;
+  color: #222;
   font-size: 1.8rem;
   text-align: center;
   margin: 20px 20px 20px 20px;
