@@ -261,20 +261,22 @@ header {
 
 .sw_dark_mode_label .textito_light {
   position: absolute;
-  top: 6px;
-  left: -53px;
+  top: 4px;
+  left: -80px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #1e323d;
+  font-size: 1.5rem;
 }
 
 .sw_dark_mode_label .textito_dark {
   position: absolute;
-  top: 6px;
-  right: -53px;
+  top: 4px;
+  right: -80px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #ddd;
+  font-size: 1.5rem;
 }
 
 .presentation {
