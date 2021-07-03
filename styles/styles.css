@@ -108,9 +108,9 @@ header {
   cursor: pointer;
 }
 
-.header_logo:hover {
-  -webkit-animation: shake 3s;
-          animation: shake 3s;
+.header_logo {
+  -webkit-animation: shake 5s;
+          animation: shake 5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
