@@ -42,11 +42,15 @@ header{
 .header_button-dark{
     background-color: $gris-claro;
     box-shadow: $button-dark-shadow;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
 }
 
 .header_button-dark:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
 }
 
 .header_logo{
@@ -55,6 +59,8 @@ header{
     border-radius: $small-radius;
     box-shadow: $button-dark-shadow;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
 }
 
 .header_logo{
