@@ -2,23 +2,21 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: $gris-oscuro;
+    background-color: var(--color-fondo-header);
     min-height: 75px;
     position: -webkit-sticky;
     position: sticky;
     top: -1px;
     z-index: 1;
-    //box-shadow:$button-dark-shadow;
     transition: 1s;
-    background-color: #ddd;
 }
 
 .header_button{
-    color:$button-text-color;
-    font-family: $font-family;
-    font-size:$boton_text-size;
-    padding: $padding-button;
-    border-radius: $small-radius;
+    color:var(--button-text-color);
+    font-family: var(--font-family);
+    font-size:var(--boton_text-size);
+    padding: var(--padding-button);
+    border-radius: var(--small-radius);
     border: none;
     cursor: pointer;  
     transition: all .2s;
@@ -27,9 +25,23 @@ header{
 
 }
 
+
+.header_button-yellow{
+    background-color: var(--amarillo);
+    box-shadow: var(--button-yellow-shadow);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.header_button-yellow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #dfa4239a;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
 .header_button-red{
-    background-color: $rojo;
-    box-shadow: $button-red-shadow;
+    background-color: var(--rojo);
+    box-shadow: var(--button-red-shadow);
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -40,8 +52,8 @@ header{
 }
 
 .header_button-dark{
-    background-color: $gris-claro;
-    box-shadow: $button-dark-shadow;
+    background-color: var(--gris-claro);
+    box-shadow: var(--button-dark-shadow);
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 
 }
@@ -56,8 +68,8 @@ header{
 .header_logo{
     width: 55px;
     height: 55px;
-    border-radius: $small-radius;
-    box-shadow: $button-dark-shadow;
+    border-radius: var(--small-radius);
+    box-shadow: var(--button-dark-shadow);
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 

@@ -1,12 +1,45 @@
-/*Colores*/
-/*Textos*/
-/*Sombras*/
-/*Border radius*/
-/*Fuentes*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-/*Paddings*/
 :root {
-  --variable-loca: #a12231;
+  /*Colores generales*/
+  --color-fondo-body: #ddd;
+  --color-fondo-header: #ddd;
+  --color-fondo-main: #ddd;
+  --color-boton-titulo:#ddd;
+  --color-fondo-tarjetas:white;
+  --color-fondo-tarjetas-botones:#1E323D;
+  --color-texto: black;
+  --azul-oscuro: #011627;
+  --amarillo: #ffc342;
+  --gris-claro: #2f424e;
+  --gris-oscuro: #1e323d;
+  --rojo: #ff685e;
+  --celeste: #38b6ff;
+  --naranja: #ff9e47;
+  --azul-electrico: #0061ff;
+  /*Colores texto*/
+  --parrafo-text-color: #96a7af;
+  --titulo-text-color: #fff;
+  --button-text-color: #fff;
+  /*Textos*/
+  --titulo-size: 2.4rem;
+  --parrafo-size: 1.8rem;
+  --boton_text-size: 1.6rem;
+  --footer-text-size: 1.4rem;
+  /*Sombras*/
+  --filter-imagen-proyectos: drop-shadow(0px 1px 14px rgba(0, 0, 0, 0.3));
+  --button-red-shadow: 0px 0px 14px rgba(255, 104, 94, 0.33);
+  --button-dark-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);
+  --button-yellow-shadow: 0px 1px 4px #dfa423;
+  --sombra-tarjeta-botones:0px 1px 14px #19282F;
+  --filter-proyectos-card: drop-shadow(0px 1px 15px #FFFFFF);
+  /*Border radius*/
+  --small-radius: 12px;
+  --normal-radius: 25px;
+  --proyecto-img-radius: 12px 12px 56px 0px;
+  /*Fuentes*/
+  --font-family: "Roboto", sans-serif;
+  /*Paddings*/
+  --padding-button: 6px 25px;
 }
 
 * {
@@ -18,30 +51,27 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
-  background-color: #ddd;
+  height: 100vh;
 }
 
 body {
   -webkit-transition: 1s;
   transition: 1s;
+  background-color: var(--color-fondo-body);
+  font-family: var(--font-family);
   background-color: #ddd;
 }
 
 .dark-mode {
-  background-color: #1e323d !important;
+  --color-fondo-header: #1E323D;
+  --color-fondo-main: #1E323D;
+  --color-fondo-body:#1E323D !important;
 }
 
 .light-mode {
-  background-color: #ddd !important;
-}
-
-.dark-mode_text {
-  color: #ddd !important;
-}
-
-.light-mode_text {
-  color: #222 !important;
+  --color-fondo-header: #ddd;
+  --color-fondo-main: #ddd;
+  --color-fondo-body:#ddd;
 }
 
 header {
@@ -53,7 +83,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1e323d;
+  background-color: var(--color-fondo-header);
   min-height: 75px;
   position: -webkit-sticky;
   position: sticky;
@@ -61,15 +91,14 @@ header {
   z-index: 1;
   -webkit-transition: 1s;
   transition: 1s;
-  background-color: #ddd;
 }
 
 .header_button {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  padding: 6px 25px;
-  border-radius: 12px;
+  color: var(--button-text-color);
+  font-family: var(--font-family);
+  font-size: var(--boton_text-size);
+  padding: var(--padding-button);
+  border-radius: var(--small-radius);
   border: none;
   cursor: pointer;
   -webkit-transition: all .2s;
@@ -78,10 +107,25 @@ header {
   height: 31px;
 }
 
+.header_button-yellow {
+  background-color: var(--amarillo);
+  -webkit-box-shadow: var(--button-yellow-shadow);
+          box-shadow: var(--button-yellow-shadow);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.header_button-yellow:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 10px 20px #dfa4239a;
+          box-shadow: 0 10px 20px #dfa4239a;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .header_button-red {
-  background-color: #ff685e;
-  -webkit-box-shadow: 0px 0px 14px rgba(255, 104, 94, 0.33);
-          box-shadow: 0px 0px 14px rgba(255, 104, 94, 0.33);
+  background-color: var(--rojo);
+  -webkit-box-shadow: var(--button-red-shadow);
+          box-shadow: var(--button-red-shadow);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -94,9 +138,9 @@ header {
 }
 
 .header_button-dark {
-  background-color: #2f424e;
-  -webkit-box-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);
-          box-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);
+  background-color: var(--gris-claro);
+  -webkit-box-shadow: var(--button-dark-shadow);
+          box-shadow: var(--button-dark-shadow);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -111,9 +155,9 @@ header {
 .header_logo {
   width: 55px;
   height: 55px;
-  border-radius: 12px;
-  -webkit-box-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);
-          box-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);
+  border-radius: var(--small-radius);
+  -webkit-box-shadow: var(--button-dark-shadow);
+          box-shadow: var(--button-dark-shadow);
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -255,7 +299,7 @@ header {
 }
 
 .sw_dark_mode_input:checked ~ .sw_dark_mode_label::before {
-  background-image: url("../assets/iconmoon2.PNG");
+  background-image: url("../../assets/iconmoon2.PNG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -275,9 +319,9 @@ header {
   position: absolute;
   top: 4px;
   left: -80px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   font-weight: bold;
-  color: #1e323d;
+  color: var(gris-oscuro);
   font-size: 1.5rem;
   pointer-events: none;
   -webkit-user-select: none;
@@ -290,14 +334,15 @@ header {
   position: absolute;
   top: 4px;
   right: -80px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   font-weight: bold;
   color: #ddd;
   font-size: 1.5rem;
   pointer-events: none;
 }
 
-.presentation {
+.proyectos {
+  min-height: calc(100vh - 250px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,264 +350,46 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  background-color: #ddd;
+  background-color: var(--color-fondo-main);
+}
+
+.proyectos_title {
+  margin: 40px auto;
+}
+
+.proyectos_cards {
+  border: 10px saddlebrown solid;
+  width: 80%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  position: relative;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.presentation_data {
-  margin-bottom: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.presentation_logotipo {
-  width: 290px;
-  height: auto;
-  margin: 30px auto;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);
-          box-shadow: 0px 0px 14px rgba(47, 66, 78, 0.33);
-}
-
-.presentation_img {
-  width: 250px;
-  height: auto;
-  margin: 30px auto;
-}
-
-.presentation_texts {
-  margin-bottom: 20%;
-}
-
-.presentation_saludo {
-  color: #222;
-  font-size: 2.4rem;
-  margin: 20px auto;
-  text-align: center;
-}
-
-.presentation_description {
-  color: #222;
-  font-size: 1.8rem;
-  text-align: center;
-  margin: 20px 20px 20px 20px;
-  padding: 20px auto;
-}
-
-.presentation_wave {
-  position: absolute;
-  bottom: -2px;
-  width: 100%;
-}
-
-/*mixins*/
-@-webkit-keyframes load-html {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 60%;
-  }
-}
-@keyframes load-html {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 60%;
-  }
-}
-
-@-webkit-keyframes load-css {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 30%;
-  }
-}
-
-@keyframes load-css {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 30%;
-  }
-}
-
-@-webkit-keyframes load-js {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 20%;
-  }
-}
-
-@keyframes load-js {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 20%;
-  }
-}
-
-/*-----*/
-.skills {
-  background-color: #011627;
-  padding-bottom: 40px;
-}
-
-.skills_title {
-  color: white;
-  font-size: 2.4rem;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.skill_cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-  padding: 15px;
-}
-
-.skill_card {
-  background-color: #2f424e;
-  border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 15px;
-  width: 100%;
-  max-width: 350px;
-}
-
-.skill_card_img {
-  width: 42px;
-  margin-right: 10px;
-}
-
-.skill_card_data {
-  width: 100%;
-}
-
-.skill_card_texts {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 1.4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.skill_card_title {
-  color: white;
+.proyecto_card {
+  margin: 100px;
 }
 
-.skill_card_percent-html {
-  color: #ff685e;
-}
-
-.skill_card_percent-CSS {
-  color: #38b6ff;
-}
-
-.skill_card_percent-Js {
-  color: #ffc342;
-}
-
-.skill_card_progress {
-  margin-top: 5px;
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  border-radius: 100px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 15px;
-  width: 100%;
-}
-
-.skill_card_progress_value-html {
-  background: #ff685e;
-  -webkit-animation: load-html 3s normal forwards;
-          animation: load-html 3s normal forwards;
-  -webkit-box-shadow: 0 10px 40px -10px #fff;
-          box-shadow: 0 10px 40px -10px #fff;
-  border-radius: 100px;
-  height: 15px;
-  width: 0;
-}
-
-.skill_card_progress_value-CSS {
-  background: #38b6ff;
-  -webkit-animation: load-css 3s normal forwards;
-          animation: load-css 3s normal forwards;
-  -webkit-box-shadow: 0 10px 40px -10px #fff;
-          box-shadow: 0 10px 40px -10px #fff;
-  border-radius: 100px;
-  height: 15px;
-  width: 0;
-}
-
-.skill_card_progress_value-Js {
-  background: #ffc342;
-  -webkit-animation: load-js 3s normal forwards;
-          animation: load-js 3s normal forwards;
-  -webkit-box-shadow: 0 10px 40px -10px #fff;
-          box-shadow: 0 10px 40px -10px #fff;
-  border-radius: 100px;
-  height: 15px;
-  width: 0;
-}
-
-.skill_image {
-  display: none;
+.proyecto_card_img {
+  width: 100px;
 }
 
 footer {
+  margin-top: auto;
   width: 100%;
-  height: 175px;
-  background-color: #1e323d;
+  min-height: 175px;
+  background-color: var(--gris-oscuro);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,7 +423,7 @@ footer {
 }
 
 .footer_text {
-  font-size: 1.4rem;
+  font-size: var(--footer-text-size);
   color: white;
   margin-bottom: 12px;
 }

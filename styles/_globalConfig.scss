@@ -33,6 +33,10 @@ $font-family: 'Roboto', sans-serif;
 /*Paddings*/
 $padding-button:6px 25px;
 
+:root{
+  --variable-loca: #a12231;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -42,12 +46,14 @@ $padding-button:6px 25px;
 html{
     font-size: 62.5%;
     font-family: $font-family;
-    //background-color: $gris-oscuro;
+    background-color: #ddd;
+
 }
 
 body{
-    background-color:  #ddd;
     transition: 1s;
+    background-color: #ddd;
+
 }
 
 .dark-mode{

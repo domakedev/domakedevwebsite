@@ -5,6 +5,10 @@
 /*Fuentes*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 /*Paddings*/
+:root {
+  --variable-loca: #a12231;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -15,12 +19,13 @@
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
+  background-color: #ddd;
 }
 
 body {
-  background-color: #ddd;
   -webkit-transition: 1s;
   transition: 1s;
+  background-color: #ddd;
 }
 
 .dark-mode {
@@ -49,7 +54,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #1e323d;
-  height: 75px;
+  min-height: 75px;
   position: -webkit-sticky;
   position: sticky;
   top: -1px;

@@ -1,0 +1,33 @@
+.proyectos{
+    //height: calc(100% - 250px);
+    min-height: calc(100vh - 250px);
+    //height: calc(100vh - 250px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: var(--color-fondo-main);
+    
+}
+
+.proyectos_title{
+    margin: 40px auto;
+}
+
+.proyectos_cards{
+    border: 10px saddlebrown solid;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.proyecto_card{
+
+    margin: 100px;
+}
+
+.proyecto_card_img{
+    width: 100px;
+}
