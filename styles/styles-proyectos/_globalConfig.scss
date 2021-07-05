@@ -19,7 +19,7 @@
 
   /*Colores texto*/
   --parrafo-text-color: #96a7af;
-  --titulo-text-color: #fff;
+  --titulo-text-color: #1e323d;
   --button-text-color: #fff;
 
   /*Textos*/
@@ -64,7 +64,6 @@ body {
   transition: 1s;
   background-color: var(--color-fondo-body);
   font-family: var(--font-family);
-  background-color: #ddd;
 
   //height: 100%;
   ///height: 100vh;
@@ -83,10 +82,12 @@ body {
     --color-fondo-header: #1E323D;
     --color-fondo-main: #1E323D;
     --color-fondo-body:#1E323D !important;
+    --titulo-text-color:#ddd;
 }
 
 .light-mode{
     --color-fondo-header: #ddd;
     --color-fondo-main: #ddd;
-    --color-fondo-body:#ddd;
+    --color-fondo-body:#ddd !important;
+    --titulo-text-color: #222;
 }

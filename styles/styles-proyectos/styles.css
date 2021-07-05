@@ -18,7 +18,7 @@
   --azul-electrico: #0061ff;
   /*Colores texto*/
   --parrafo-text-color: #96a7af;
-  --titulo-text-color: #fff;
+  --titulo-text-color: #1e323d;
   --button-text-color: #fff;
   /*Textos*/
   --titulo-size: 2.4rem;
@@ -59,19 +59,20 @@ body {
   transition: 1s;
   background-color: var(--color-fondo-body);
   font-family: var(--font-family);
-  background-color: #ddd;
 }
 
 .dark-mode {
   --color-fondo-header: #1E323D;
   --color-fondo-main: #1E323D;
   --color-fondo-body:#1E323D !important;
+  --titulo-text-color:#ddd;
 }
 
 .light-mode {
   --color-fondo-header: #ddd;
   --color-fondo-main: #ddd;
-  --color-fondo-body:#ddd;
+  --color-fondo-body:#ddd !important;
+  --titulo-text-color: #222;
 }
 
 header {
@@ -321,7 +322,7 @@ header {
   left: -80px;
   font-family: var(--font-family);
   font-weight: bold;
-  color: var(gris-oscuro);
+  color: var(--gris-oscuro);
   font-size: 1.5rem;
   pointer-events: none;
   -webkit-user-select: none;
@@ -355,10 +356,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: var(--color-fondo-main);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .proyectos_title {
   margin: 40px auto;
+  color: var(--titulo-text-color);
 }
 
 .proyectos_cards {
@@ -370,11 +374,12 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 20px auto;
 }
 
 .proyecto_card {
@@ -382,7 +387,7 @@ header {
 }
 
 .proyecto_card_img {
-  width: 100px;
+  min-width: 100px;
 }
 
 footer {
