@@ -4,7 +4,7 @@
     //height: calc(100vh - 250px);
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    //gap: 30px;
     align-items: center;
     background-color: var(--color-fondo-main);
     transition: 1s;
@@ -27,12 +27,13 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 20px auto;
+    //margin: 20px auto;
 }
 
 .proyecto_card{
     margin: 30px;
     width: 292px;
+    height: fit-content;
     background-color: var(--color-fondo-tarjetas);
     border-radius: var(--small-radius);
     filter: var(--filter-proyectos-card);
@@ -57,6 +58,7 @@
 .proyecto_card_title{
     font-size: var(--card-proyecto-title);
     color: var(--card-title-color);
+    text-align: center;
 }
 
 .proyecto_card_links{
@@ -77,15 +79,16 @@
 .proyecto_card_techs{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
-    margin-bottom: 7px;
+    margin: 7px 15px;
 }
 
 .proyecto_card_tech{
     font-size: var(--card-tech-font-size);
     //color: var(--card-tech-color);
     background-color: brown;
-    padding: 5% 10%;
+    padding: 5px 10px;
     border-radius: var(--small-radius);
     color: var(--card-tech-color);
 }
@@ -99,4 +102,7 @@
 .proyecto_card_tech-js{
     background-color: var(--amarillo);
     color: black;
+}
+.proyecto_card_tech-github{
+    background-color: var(--color-github);
 }

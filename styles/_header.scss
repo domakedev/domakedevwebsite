@@ -27,6 +27,16 @@ header{
 
 }
 
+.header_button-dark_icon{
+    width: 19px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
 .header_button-red{
     background-color: $rojo;
     box-shadow: $button-red-shadow;
@@ -43,6 +53,8 @@ header{
     background-color: $gris-claro;
     box-shadow: $button-dark-shadow;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    display: flex;
+
 
 }
 
