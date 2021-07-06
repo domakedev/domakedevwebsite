@@ -103,6 +103,7 @@ body {
 }
 
 header {
+  height: 118px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
