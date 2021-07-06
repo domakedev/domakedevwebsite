@@ -3,6 +3,7 @@
   --color-fondo-body: #ddd;
   --color-fondo-header: #ddd;
   --color-fondo-main: #ddd;
+  --color-fondo-titulo: #ddd;
   --color-boton-titulo:#ddd;
   --color-fondo-tarjetas:white;
   --color-fondo-tarjetas-botones:#1E323D;
@@ -21,12 +22,16 @@
   --parrafo-text-color: #96a7af;
   --titulo-text-color: #1e323d;
   --button-text-color: #fff;
+  --card-title-color: black;
+  --card-tech-color: #fff;
 
-  /*Textos*/
+  /*Textos tamaños*/
   --titulo-size: 2.4rem;
   --parrafo-size: 1.8rem;
   --boton_text-size: 1.6rem;
   --footer-text-size: 1.4rem;
+  --card-proyecto-title: 1.8rem;
+  --card-tech-font-size:1rem;
 
   /*Sombras*/
   --filter-imagen-proyectos: drop-shadow(0px 1px 14px rgba(0, 0, 0, 0.3));
@@ -35,11 +40,13 @@
   --button-yellow-shadow: 0px 1px 4px #dfa423;
   --sombra-tarjeta-botones:0px 1px 14px #19282F;
   --filter-proyectos-card: drop-shadow(0px 1px 15px #FFFFFF);
+  --filter-sombra-negra: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.3));
 
   /*Border radius*/
   --small-radius: 12px;
   --normal-radius: 25px;
   --proyecto-img-radius: 12px 12px 56px 0px;
+  
 
   /*Fuentes*/
   @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
@@ -66,12 +73,12 @@ body {
   font-family: var(--font-family);
 
   //height: 100%;
-  ///height: 100vh;
+  height: 100vh;
 
   //position: relative;
 
-  //display: flex;
-  //flex-direction: column;
+  display: flex;
+  flex-direction: column;
   //flex-flow: column;
 
 }
@@ -80,9 +87,19 @@ body {
 
 .dark-mode{
     --color-fondo-header: #1E323D;
-    --color-fondo-main: #1E323D;
+    --color-fondo-main: #2F424E;
     --color-fondo-body:#1E323D !important;
     --titulo-text-color:#ddd;
+
+
+    --color-fondo-titulo: #1E323D; // gris oscuro
+
+    --color-fondo-tarjetas:#011627;
+  --filter-proyectos-card: drop-shadow(0px 1px 14px #19282F);
+  --card-title-color:#ddd;
+
+
+
 }
 
 .light-mode{
@@ -90,4 +107,13 @@ body {
     --color-fondo-main: #ddd;
     --color-fondo-body:#ddd !important;
     --titulo-text-color: #222;
+
+    --color-fondo-titulo: #ddd;
+
+    --color-fondo-tarjetas:white;
+    --filter-proyectos-card: drop-shadow(0px 1px 15px #FFFFFF);
+    --card-title-color:#222;
+
+
+
 }

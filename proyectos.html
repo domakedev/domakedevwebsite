@@ -19,7 +19,10 @@
         src="assets/logo.png"
         alt="logo de domakedev.com"
       />
-      <button class="header_button header_button-dark">Contacto</button>
+      <a href="contactame.html">
+        <button class="header_button header_button-dark">Contacto</button>
+      </a>
+      
     </header>
 
     <input class="sw_dark_mode_input" type="checkbox" name="" id="checkbox" />
@@ -31,15 +34,25 @@
     <main class="proyectos">
         <h1 class="proyectos_title">Proyectos</h1>
         <section class="proyectos_cards">
-            <div class="proyecto_card">
-                <img class="proyecto_card_img" src="assets/presentation_img.svg" alt="">            
-            </div>
-            <div class="proyecto_card">
-                <img class="proyecto_card_img" src="assets/presentation_img.svg" alt="">            
-            </div>
-            <div class="proyecto_card">
-                <img class="proyecto_card_img" src="assets/presentation_img.svg" alt="">            
-            </div>
+            <article class="proyecto_card">
+                <img class="proyecto_card_img" src="assets/areasTaller.png" alt="">            
+                <div class="proyecto_card_data">
+                  <h2 class="proyecto_card_title">Calculos Geometricos</h2>
+                  <div class="proyecto_card_links">
+                    <a href="https://github.com/domakedev/js-practico-taller1" target="_blank">
+                      <img class="proyecto_card_link" src="assets/github3.svg" alt="">
+                    </a>
+                    <a href="https://domakedev.github.io/js-practico-taller1/" target="_blank">
+                      <img class="proyecto_card_link" src="assets/logo-www.svg" alt="">
+                    </a>                                    
+                  </div>
+                  <div class="proyecto_card_techs">
+                    <span class="proyecto_card_tech proyecto_card_tech-html" >HTML</span>
+                    <span class="proyecto_card_tech proyecto_card_tech-css" >CSS</span>
+                    <span class="proyecto_card_tech proyecto_card_tech-js" >Js</span>
+                  </div>
+                </div>
+            </article>           
         </section>
     </main>
 

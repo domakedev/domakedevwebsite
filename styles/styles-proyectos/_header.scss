@@ -9,6 +9,7 @@ header{
     top: -1px;
     z-index: 1;
     transition: 1s;
+    font-weight: bold;
 }
 
 .header_button{
@@ -30,6 +31,7 @@ header{
     background-color: var(--amarillo);
     box-shadow: var(--button-yellow-shadow);
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: black;
 }
 
 .header_button-yellow:hover {
