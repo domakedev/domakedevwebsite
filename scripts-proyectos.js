@@ -1,31 +1,31 @@
-let checkbox = document.querySelector('.sw_dark_mode_input')
-var Andi
+let checkbox = document.querySelector(".sw_dark_mode_input");
+let theme = localStorage.getItem("theme");
 
-checkbox? Andi= 1 : Andi = 0;
+if (theme === "dark") {
+    checkbox.checked = true
+  console.log("papuuu ando darks");
+  document.body.classList.remove("light-mode");
+  document.body.classList.add("dark-mode");
 
-if (Andi==1) {
-    console.log("Andi es 1");
-} else {
-    console.log("Andi es 0");
+} else if (theme === "light") {
+    checkbox.checked = false
+  console.log("papuuu ando light");
+  document.body.classList.remove("dark-mode");
+  document.body.classList.add("light-mode");
 }
 
-setTimeout(function(){
-    if (checkbox.checked==true) {
-        document.body.classList.remove('light-mode')
-        document.body.classList.add('dark-mode')
-    } else {
-        document.body.classList.remove('dark-mode')
-        document.body.classList.add('light-mode')
-    }
-},0)
 
-checkbox.addEventListener('change', function(event){
-    console.log(this.checked);
-    if (this.checked) {
-        document.body.classList.remove('light-mode')
-        document.body.classList.add('dark-mode')
-    } else {
-        document.body.classList.remove('dark-mode')
-        document.body.classList.add('light-mode')
-    }
-})
+checkbox.addEventListener("change", function (event) {
+  console.log(this.checked);
+  if (this.checked) {
+    localStorage.setItem('theme','dark')
+
+    document.body.classList.remove("light-mode");
+    document.body.classList.add("dark-mode");
+  } else {
+    localStorage.setItem('theme','light')
+
+    document.body.classList.remove("dark-mode");
+    document.body.classList.add("light-mode");
+  }
+});
