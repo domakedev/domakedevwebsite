@@ -34,6 +34,7 @@ const Header = () => {
     <header className='cabecera'>
       <Link
         href="/"
+        className='logo-link'
       >
         <Image
           src={Logo}
