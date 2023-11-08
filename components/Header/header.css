@@ -1,0 +1,42 @@
+.cabecera {
+  height: 107px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.active {
+  color: #38b6ff;
+  font-weight: bold;
+  position: relative;
+}
+/* 
+.active::after {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #38b6ff;
+  border-radius: 100%;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(90deg, #38b6ff, #38b6ff 10px, transparent 10px, transparent 20px);
+
+} */
+
+.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 5px dotted #38b6ff; /* Establece el color y estilo del subrayado punteado */
+  position: absolute;
+  bottom: -3;
+  left: 0;
+}

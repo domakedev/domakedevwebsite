@@ -1,0 +1,22 @@
+nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.active {
+  color: #38b6ff;
+  font-weight: bold;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 5px dotted #38b6ff; /* Establece el color y estilo del subrayado punteado */
+  position: absolute;
+  bottom: -3;
+  left: 0;
+}
