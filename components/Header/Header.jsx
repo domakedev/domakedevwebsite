@@ -1,13 +1,17 @@
 'use client'
 import React from 'react'
 import "./header.css"
-import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
 import { usePathname } from 'next/navigation'
 import NavLi from '../Nav/NavLi'
+import { slide as Menu } from 'react-burger-menu'
+import Link from 'next/link'
+import { useState } from 'react'
+
 
 const Header = () => {
+  const [ openMenu, setOpenMenu ] = useState(false)
   const pathName = usePathname()
 
   const routes = [
@@ -18,26 +22,50 @@ const Header = () => {
     {
       linkTo: "/tecnologias",
       name: "Tecnologías"
+    },
+    {
+      linkTo: "/proyectos",
+      name: "Proyectos"
     }
   ]
 
-  console.log('🚀 ~ file: Header.jsx:10 ~ pathName:', pathName)
+  
   return (
-    <div className='cabecera'>
-      <Image
-        src={Logo}
-        width={376}
-        height={107}
-        alt="Domakedev Logo"
-      />
-      {/* <nav>
-        <ul>
-          <li className={pathName === "/" ? "active" : null}><Link href="/">Presentación</Link></li>
-          <li><Link href="#">Tecnología</Link></li>
-          <li><Link href="#">Proyectos</Link></li>
-        </ul>
-      </nav> */}
-      <nav>
+    <header className='cabecera'>
+      <Link
+        href="/"
+        className='logo-link'
+      >
+        <Image
+          src={Logo}
+          width={376}
+          height={107}
+          alt="Domakedev Logo"
+          className='logo'
+          priority
+        />
+      </Link>
+      <nav className="menu-small">
+        <Menu
+          right
+          isOpen={openMenu}
+          onOpen={() => setOpenMenu(true)}
+          onClose={() => setOpenMenu(false)}
+        >
+          {routes.map((route, index) => (
+            <Link
+              id={route.name}
+              className="menu-item"
+              href={route.linkTo}
+              key={index}
+              onClick={() => setOpenMenu(false)}
+            >
+              {route.name}
+            </Link>
+          ))}
+        </Menu>
+      </nav>
+      <nav className='menu-large'>
         <ul>
           {routes.map((route, index) => (
             <NavLi
@@ -49,7 +77,7 @@ const Header = () => {
           ))}
         </ul>
       </nav>
-    </div>
+    </header>
   )
 }
 

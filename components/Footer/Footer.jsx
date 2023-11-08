@@ -3,9 +3,14 @@ import "./footer.css"
 
 const Footer = () => {
   return (
-    <div className='footer'>
-      Footer
-    </div>
+    <footer className='footer'>
+      <p className='footer-text-large'>
+        🐶 Desarrollando soluciones con pasión © 2023 🔩
+      </p>
+      <p className='footer-text-small'>
+      🐶 Hecho con pasión © 2023 💻
+      </p>
+    </footer>
   )
 }
 
