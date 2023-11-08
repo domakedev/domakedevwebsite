@@ -3,7 +3,7 @@ import React from 'react'
 import "./header.css"
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '@/assets/logo.png'
+import Logo from '@/assets/logo.svg'
 import { usePathname } from 'next/navigation'
 import NavLi from '../Nav/NavLi'
 
