@@ -3,7 +3,7 @@ import "./footer.css"
 
 const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer className='footer text-base'>
       <p className='footer-text-large'>
         🐶 Desarrollando soluciones con pasión © 2023 🔩
       </p>

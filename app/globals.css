@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
 }
 
 body main {
