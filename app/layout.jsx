@@ -6,6 +6,7 @@ import Footer from '@/components/Footer/Footer'
 export const metadata = {
   title: 'Domakedev',
   description: 'Portafolio de César Guevara Cabrera', 
+  
 }
 
 export const viewport = {
@@ -18,7 +19,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>
         <Header />
         <main>{children}</main>
