@@ -14,7 +14,7 @@ export default function Home() {
 
 
       {/* // Greeting */}
-      <div className="flex flex-col w-full lg:row-span-1 lg:self-end lg:mt-8">
+      <div className="mt-5 flex flex-col w-full lg:row-span-1 lg:self-end lg:mt-8">
         <span className="text-sm lg:text-xl">Hola 👋, soy</span>
         <h1 className="text-3xl font-bold lg:text-5xl">César Guevara</h1>
       </div>
@@ -28,8 +28,8 @@ export default function Home() {
           alt="César Guevara"
           className="rounded-tl-[84px] rounded-tr-xl rounded-bl-xl w-64 lg:w-[494px] h-52 lg:h-[402px] object-cover z-10 mx-auto"
         />
-        <div className="w-24 lg:w-[192px] h-6 lg:h-[44px] bg-sky-400 absolute top-4 lg:top-[20px] -left-0 -z-10"></div>
-        <div className="w-24 lg:w-[192px] h-6 lg:h-[44px] bg-yellow-500 absolute top-14 lg:top-[98px] -left-2 -z-10"></div>
+        <div className="w-24 lg:w-[192px] h-6 lg:h-[44px] bg-light-blue absolute top-4 lg:top-[20px] -left-0 -z-10"></div>
+        <div className="w-24 lg:w-[192px] h-6 lg:h-[44px] bg-yellow absolute top-14 lg:top-[98px] -left-2 -z-10"></div>
         <div className="w-24 lg:w-[192px] h-6 lg:h-[44px] bg-black absolute bottom-6 lg:bottom-[44px] -right-1 -z-10"></div>
       </div>
 
@@ -38,10 +38,10 @@ export default function Home() {
 
       {/* // Career */}
       <div className="flex justify-center lg:justify-start w-full gap-1 text-base lg:text-2xl mt-[28px] lg:row-span-1">
-        <h2 className="text-dmd-light-blue font-bold">Programador Frontend</h2>
-        <span className="text-dmd-green font-bold">/</span>
-        <span className="text-dmd-light-blue font-bold">/</span>
-        <h2 className="text-dmd-green font-bold">Ingeniero Electrónico</h2>
+        <h2 className="text-light-blue font-bold">Programador Frontend</h2>
+        <span className="text-green font-bold">/</span>
+        <span className="text-light-blue font-bold">/</span>
+        <h2 className="text-green font-bold">Ingeniero Electrónico</h2>
       </div>
 
 
@@ -55,9 +55,9 @@ export default function Home() {
           <br />
           Te invito a conocer mis proyectos.
         </p>
-        <Link href="/proyectos" className="text-sm bg-dmd-yellow py-[12px] px-[7px] flex gap-2 justify-center items-center mt-[21px] w-[137px] rounded-sm action-button">
+        <Link href="/proyectos" className="text-sm bg-yellow py-[12px] px-[7px] flex gap-2 justify-center items-center mt-[21px] w-[137px] rounded-sm action-button">
           Proyectos
-          <MdOutlineWeb size="24" className="text-dmd-black" />
+          <MdOutlineWeb size="24" className="text-black" />
         </Link>
       </div>
 
