@@ -1,20 +1,45 @@
-import React from 'react'
+import PageTittle from '@/components/PageTittle/PageTittle'
+import TechCard from '@/components/TechCard/TechCard'
+import TechSection from '@/components/TechSection/TechSection'
+import TechsList from '@/utils/TechList'
+
 
 const page = () => {
     return (
-        <div className='bg-dmd-light-blue w-full h-full'>
-            Techs
+        <div className='px-7 w-full h-full flex items-center flex-col gap-10'>
             {/* Titulo */}
-            <div>
-                <span className='text-sm'>Principales</span>
-                <h1 className='text-'>Tecnologías</h1>
-            </div>
+            <PageTittle
+                title="Tecnologías"
+                preTitle="Principales"
+            />
             {/* Seccion de Techs */}
-            {/* /// Titulo */}
-            {/* /// TechCards */}
-            {/* Seccion de Techs */}
+            <TechSection techsType="frontend">
+                {TechsList.map((tech, index) => (
+                    <TechCard
+                        key={index}
+                        img={tech.img}
+                        techName={tech.techName}
+                        techColor={tech.techColor}
+                        contraste={tech.contraste}
+                    />
+                ))}
+            </TechSection>
+            <TechSection techsType="backend">
+                {TechsList.map((tech, index) => (
+                    <TechCard
+                        key={index}
+                        img={tech.img}
+                        techName={tech.techName}
+                        techColor={tech.techColor}
+                        contraste={tech.contraste}
+                    />
+                ))}
+            </TechSection>
         </div>
     )
 }
 
 export default page
+
+
+
