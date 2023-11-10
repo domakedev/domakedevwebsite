@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function Home() {
 
   return (
-    <div className="px-7 flex flex-col items-center lg:grid lg:grid-rows-3 lg:grid-flow-col lg:gap-4 lg:max-w-6xl lg:h-[393px] lg:-mt-[100px]">
+    <div className="px-7 flex flex-col items-center lg:grid lg:grid-rows-3 lg:grid-flow-col lg:gap-4 lg:max-w-6xl lg:h-[393px] lg:-mt-[100px] max-w-[400px]">
 
 
       {/* // Greeting */}
