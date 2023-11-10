@@ -35,16 +35,16 @@ body main {
 /* Restilar Scroll */
 
 ::-webkit-scrollbar {
-  width: 5px;
-  max-height: 10px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #fff;
-  border-radius: 2.5px; /* La mitad del grosor para que parezca flotar */
+  border-radius: 5px; /* La mitad del grosor para que parezca flotar */
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent; /* Fondo transparente para que parezca flotar */
+  background-color: rgba(255, 255, 255, 0.28); /* Fondo transparente para que parezca flotar */
   border-radius: 2.5px; /* La mitad del grosor para que parezca flotar */
 }

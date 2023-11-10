@@ -1,0 +1,5 @@
+/* Codigo de prueba */
+.asd {
+    -webkit-clip-path: polygon(100% 0, 88% 100%, 77% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 88% 100%, 77% 100%, 0 100%, 0 0);
+}
