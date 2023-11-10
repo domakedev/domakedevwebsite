@@ -9,7 +9,7 @@ const page = () => {
         <div className='px-7 w-full h-full flex items-center flex-col gap-10'>
             {/* Titulo */}
             <PageTittle
-                title="Tecnologias"
+                title="Tecnologías"
                 preTitle="Principales"
             />
             {/* Seccion de Techs */}
