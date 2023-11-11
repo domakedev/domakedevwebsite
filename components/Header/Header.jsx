@@ -38,10 +38,8 @@ const Header = () => {
       >
         <Image
           src={Logo}
-          width={376}
-          height={107}
           alt="Domakedev Logo"
-          className='logo'
+          className='logo w-[300px] '
           priority
         />
       </Link>

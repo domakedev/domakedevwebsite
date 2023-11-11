@@ -34,17 +34,17 @@ body main {
 
 /* Restilar Scroll */
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #fff;
-  border-radius: 5px; /* La mitad del grosor para que parezca flotar */
+  border-radius: 5px; 
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgba(255, 255, 255, 0.28); /* Fondo transparente para que parezca flotar */
-  border-radius: 2.5px; /* La mitad del grosor para que parezca flotar */
-}
+  background-color: rgba(255, 255, 255, 0.28); 
+  border-radius: 2.5px; 
+} */

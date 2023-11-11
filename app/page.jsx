@@ -41,7 +41,7 @@ export default function Home() {
         <h2 className="text-light-blue font-bold">Programador Frontend</h2>
         <span className="text-green font-bold">/</span>
         <span className="text-light-blue font-bold">/</span>
-        <h2 className="text-green font-bold">Ingeniero Electrónico</h2>
+        <h2 className="text-green font-bold">Ing. Electrónico</h2>
       </div>
 
 

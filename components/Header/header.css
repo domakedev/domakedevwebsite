@@ -13,9 +13,6 @@
   display: none;
 }
 
-.logo {
-  width: 190px;
-}
 .logo-link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -29,21 +26,6 @@ nav ul {
   display: flex;
   align-items: center;
   gap: 34px;
-}
-
-.active {
-  color: #38b6ff;
-  font-weight: bold;
-  position: relative;
-}
-.active::after {
-  content: "";
-  display: block;
-  width: 100%;
-  border-bottom: 5px dotted #38b6ff;
-  position: absolute;
-  bottom: -3;
-  left: 0;
 }
 
 @media (min-width: 1024px) {

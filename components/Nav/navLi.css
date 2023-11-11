@@ -5,9 +5,10 @@ nav ul {
   gap: 34px;
 }
 
+
 .active {
   color: #38b6ff;
-  font-weight: bold;
+  font-weight: 600;
   position: relative;
 }
 
@@ -15,7 +16,7 @@ nav ul {
   content: "";
   display: block;
   width: 100%;
-  border-bottom: 5px dotted #38b6ff; /* Establece el color y estilo del subrayado punteado */
+  border-bottom: 5px dotted #38b6ff; 
   position: absolute;
   bottom: -3;
   left: 0;
