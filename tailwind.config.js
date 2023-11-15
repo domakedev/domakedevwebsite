@@ -16,6 +16,7 @@ module.exports = {
       'red': '#F84F5A',
       'green': '#268E6C',
       'white': '#fff',
+      'gray': '#636363',
       // Colores de Tecnologías
       "html": "#E34F26",
       "css": "#1572B6",
@@ -30,6 +31,7 @@ module.exports = {
       "typescript": "#3178C6",
       "express-js": "#000000",
       "mongodb": "#47A248",
+      "mongoose": "#890000",
       "mysql": "#4479A1",
       "postgresql": "#336791",
       "firebase": "#FFCA28",
@@ -38,7 +40,11 @@ module.exports = {
       "laravel": "#FF2D20",
       "tailwindcss": "#38bdf8",
       "react-native": "#61DAFB",
-      "git": "#F05032"
+      "git": "#F05032",
+      "apolloGraphQL": "#ffeadb",
+      "jest": "#99425B",
+      "styled-components": "#DB7093",
+      "axios": "#671ddf"
 
     },
   },
