@@ -2,6 +2,7 @@
 import Image from "next/image"
 import FrontendIcon from '@/assets/frontend-icon.svg'
 import BackendIcon from "@/assets/backend-icon.svg"
+import BasicsIcon from "@/assets/basics-icon.svg"
 
 import "./asd.css"
 
@@ -22,12 +23,20 @@ const TechSection = ({ techsType, children }) => {
             icon: BackendIcon,
             bgFlotanteY: "bg-green",
             bgFlotanteX: "md:bg-gradient-to-r md:from-black md:from-0% md:to-green to-100%"
+        },
+        "basics": {
+            title: "Esenciales",
+            "bgCard": "bg-gradient-to-r from-gray from-0% to-black to-100%",
+            "bgCard": "bg-gradient-to-r from-black from-0% to-gray to-100%",
+            icon: BasicsIcon,
+            bgFlotanteY: "bg-gray",
+            bgFlotanteX: "md:bg-gradient-to-r md:from-gray md:from-0% md:to-black to-100%"
         }
     }
 
     return (
         <div className="flex relative md:w-full md:justify-center">
-            <div className={`w-[284px] h-[450px]  rounded-[18px] mt-[17px] mb-[48px]  ${techsData[ techsType ]?.bgCard}
+            <div className={`w-[284px] h-[450px]  rounded-[18px] ${techsData[ techsType ]?.bgCard}
             
             md:w-4/5 md:flex md:flex-col md:gap-6 md:rounded-[18px]
             md:h-fit md:p-6
@@ -46,7 +55,7 @@ const TechSection = ({ techsType, children }) => {
                     />
                 </div>
                 {/* /// TechCards */}
-                <div className=" overflow-y-scroll w-[284px] h-[360px] mt-2 
+                <div className=" overflow-y-auto w-[284px] h-[360px] mt-2  scroll-personalizado
                 
                 md:w-full md:h-fit md:overflow-y-hidden
                 md:flex md:justify-center md:items-center
@@ -62,7 +71,7 @@ const TechSection = ({ techsType, children }) => {
 
             </div>
             {/* FLotante */}
-            <div className={`w-[48px] h-[450px]  mt-[17px] rounded-[18px] -right-[10px] absolute -z-10 ${techsData[ techsType ]?.bgFlotanteY} 
+            <div className={`w-[48px] h-[450px] rounded-[18px] -right-[10px] absolute -z-10 ${techsData[ techsType ]?.bgFlotanteY} 
                      
             md:hidden
             

@@ -4,9 +4,9 @@ import Image from 'next/image'
 const TechCard = ({ img, techName, techColor, contraste }) => {
 
     return (
-        <div className="bg-black w-[113px] h-[119px] rounded flex flex-col gap-3 justify-between items-center py-[7px] px-[10px] 
+        <div className="bg-black w-[113px] h-[119px] rounded flex flex-col gap-3 justify-between items-center py-[7px] px-[10px]
         
-        md:min-w-[152px] md:h-[161px]
+        md:min-w-[152px] md:h-[161px] 
 
         ">
             <Image
