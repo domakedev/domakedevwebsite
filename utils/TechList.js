@@ -16,6 +16,7 @@ import AxiosLogo from '@/assets/techs/frontend/axios.svg'
 import MongoDBLogo from '@/assets/techs/backend/mongodb.svg'
 import MongooseLogo from '@/assets/techs/backend/mongoose.png'
 import ExpressJsLogo from '@/assets/techs/backend/express.svg'
+import JwtLogo from '@/assets/techs/jwt.svg'
 
 export const logos = {
     html: HTMLLogo,
@@ -146,6 +147,12 @@ const expressJs = {
     techColor: "bg-express-js"
 }
 
+const jwt = {
+    img: JwtLogo,
+    techName: 'JWT',
+    techColor: "bg-jwt"
+}
+
 export const allTechs = {
     javascript,
     git,
@@ -164,7 +171,8 @@ export const allTechs = {
     mongoDb,
     axios,
     expressJs,
-    mongoose
+    mongoose,
+    jwt
 }
 
 export const basicTechs = [
@@ -184,7 +192,8 @@ export const frontendTechs = [
     styledComponents,
     apolloGraphQL,
     jest,
-    axios
+    axios,
+    jwt
 ]
 
 export const backendTechs = [
@@ -193,7 +202,8 @@ export const backendTechs = [
     apolloGraphQL,
     mongoDb,
     mongoose,
-    expressJs
+    expressJs,
+    jwt
 ]
 
 

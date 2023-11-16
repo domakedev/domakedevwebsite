@@ -13,23 +13,29 @@ import Swal from 'sweetalert2'
 
 const ProjectCard = ({ project }) => {
     return (
-        <div className='w-[200px] h-[236px] bg-black rounded-[18px] p-3 flex flex-col items-center justify-between
+        <div className='w-[200px] h-[236px] bg-black rounded-[18px] p-3 flex flex-col items-center justify-between relative
         
         sm:w-[505px] sm:h-[251px] sm:flex-row-reverse
         
         md:w-[700px] md:h-[348px] md:p-5
         
         '>
-            <Image
-                alt='lala'
-                src={project?.img || Logo}
-                className='w-[175px] h-[124px] object-cover rounded-md
-                 
-                sm:w-[317px] sm:h-[225px]
+            <a href={project?.links?.web} className='w-[175px] h-[124px] 
                 
-                md:w-[439px] md:h-full  
+                sm:min-w-[317px] sm:h-[225px]
+                
+                md:min-w-[439px] md:h-full  
                 '
-            />
+                target='_blank'
+            >
+
+                <Image
+                    alt='Imagen del proyecto'
+                    src={project?.img || Logo}
+                    className='object-cover rounded-md min-w-full h-full              
+                '
+                />
+            </a>
 
             <div className="flex flex-row justify-between w-full h-[82px] 
             
@@ -43,18 +49,36 @@ const ProjectCard = ({ project }) => {
 
                 md:mt-0
                 ">
-                    <div className="font-bold text-lg text-white -mt-1 mb-1 
+                    <div className=" flex justify-start gap-2
                     
-                    sm:text-3xl sm:mb-0
+                    sm:mb-0
 
                     md:mb-0
                     ">
-                        {project?.title}
-                    </div>
-                    <button className="hidden max-w-[94px] min-h-[26px] bg-yellow rounded-sm text-xs 
+                        <p className='font-bold text-lg text-white -mt-1 mb-1 
                     
-                    sm:flex justify-center items-center gap-1
-                    md:mb-12 md:min-w-[130px] md:h-[37px] md:text-base"                        onClick={() => Swal.fire("Pagina de detalles en construcción...")}
+                    sm:text-3xl sm:mb-0
+
+                    md:mb-0'>
+                            {project?.title}
+                        </p>
+                        <p
+                            className={`text-xs py-[2px] px-[6px]  w-fit h-5 rounded-sm ${project?.active ? "bg-green text-white" : "bg-yellow text-black"}
+                    
+                        sm:hidden sm:leading-[18px]
+                        md:text-sm md:py-[4px] md:px-[8px] md:leading-[12px]
+                        `}>
+                            {project?.active ? "Online" : "Offline"}
+                        </p>
+
+                    </div>
+                    <button
+                        className="hidden max-w-[94px] min-h-[26px] bg-yellow rounded-sm text-xs  
+                    
+                        sm:flex justify-center items-center gap-1
+                        md:mb-12 md:min-w-[130px] md:h-[37px] md:text-base"
+
+                        onClick={() => Swal.fire("Pagina de detalles en construcción...")}
                     >
                         Ver más
                         <Image
@@ -77,10 +101,31 @@ const ProjectCard = ({ project }) => {
                 </div>
                 <div className="flex flex-col justify-end items-center gap-2 min-w-[30px] px-[5px]
                 
-                sm:flex-row sm:justify-start
+                sm:flex-row sm:justify-start sm:pl-0
                 md:gap-6
 
                 ">
+                    <p
+                        className={`hidden text-xs py-[2px] px-[6px]  w-fit h-5 rounded-sm ${project?.active ? "bg-green text-white" : "bg-yellow text-black"}
+                    
+                    sm:block sm:leading-[16px]
+                    md:text-sm md:py-[4px] md:px-[8px] md:leading-[14px]
+                    `}>
+                        {project?.active ? "Online" : "Offline"}
+                    </p>
+
+                    <a href={project?.links?.summary} target='_blank'>
+                        <Image
+                            src={SummaryIconWhite}
+                            alt='Icono de web'
+                            width={20}
+                            className='hidden'
+
+                        />
+                    </a>
+
+
+
                     <a href={project?.links?.web} target='_blank'>
                         <Image
                             src={WebIconWhite}
@@ -99,15 +144,7 @@ const ProjectCard = ({ project }) => {
                         />
                     </a>
 
-                    <a href={project?.links?.summary} target='_blank'>
-                        <Image
-                            src={SummaryIconWhite}
-                            alt='Icono de web'
-                            width={20}
-                            className='hidden'
 
-                        />
-                    </a>
 
                 </div>
             </div>

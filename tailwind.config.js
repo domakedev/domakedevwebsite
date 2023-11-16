@@ -44,7 +44,8 @@ module.exports = {
       "apolloGraphQL": "#ffeadb",
       "jest": "#99425B",
       "styled-components": "#DB7093",
-      "axios": "#671ddf"
+      "axios": "#671ddf",
+      "jwt": "#000"
 
     },
   },
