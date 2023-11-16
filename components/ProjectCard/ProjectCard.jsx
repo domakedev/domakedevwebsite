@@ -9,6 +9,7 @@ import SummaryIconWhite from "@/assets/summary-white.svg"
 import EyeIcon from "@/assets/eye.svg"
 
 import Swal from 'sweetalert2'
+import Tooltip from '../Tooltip/Tooltip'
 
 
 const ProjectCard = ({ project }) => {
@@ -55,6 +56,7 @@ const ProjectCard = ({ project }) => {
 
                     md:mb-0
                     ">
+
                         <p className='font-bold text-lg text-white -mt-1 mb-1 
                     
                     sm:text-3xl sm:mb-0
@@ -88,6 +90,9 @@ const ProjectCard = ({ project }) => {
                         />
                     </button>
 
+
+
+
                     <div className="flex flex-wrap gap-1 max-h-[120px] overflow-y-auto scroll-personalizado
                     
                     sm:max-h-[60px] sm:mt-[27px] sm:mr-2 sm:items-start
@@ -101,39 +106,47 @@ const ProjectCard = ({ project }) => {
                 </div>
                 <div className="flex flex-col justify-end items-center gap-2 min-w-[30px] px-[5px]
                 
-                sm:flex-row sm:justify-start sm:pl-0
-                md:gap-6
+                sm:flex-row sm:justify-start sm:pl-0 sm:gap-0
+                md:gap-2
 
                 ">
-                    <p
-                        className={`hidden text-xs py-[2px] px-[6px]  w-fit h-5 rounded-sm ${project?.active ? "bg-green text-white" : "bg-yellow text-black"}
-                    
-                    sm:block sm:leading-[16px]
-                    md:text-sm md:py-[4px] md:px-[8px] md:leading-[14px]
-                    `}>
-                        {project?.active ? "Online" : "Offline"}
-                    </p>
+                    <Tooltip text={project?.active ? "Puedes usar la app ✅" : "En mantenimiento 🧹"}>
+
+                        <p
+                            className={`hidden text-xs py-[2px] px-[6px]  w-fit h-5 rounded-sm ${project?.active ? "bg-green text-white" : "bg-yellow text-black"}
+                        
+                        sm:block sm:leading-[16px]
+                        md:text-sm md:py-[4px] md:px-[8px] md:leading-[14px]
+                        `}>
+                            {project?.active ? "Online" : "Offline"}
+                        </p>
+                    </Tooltip>
+
 
                     <a href={project?.links?.summary} target='_blank'>
-                        <Image
-                            src={SummaryIconWhite}
-                            alt='Icono de web'
-                            width={20}
-                            className='hidden'
+                        <Tooltip text="Visitar la app">
+                            <Image
+                                src={SummaryIconWhite}
+                                alt='Icono de web'
+                                width={20}
+                                className='hidden'
 
-                        />
+                            />
+                        </Tooltip>
                     </a>
 
 
 
-                    <a href={project?.links?.web} target='_blank'>
+                    {/* <a href={project?.links?.web} target='_blank'>
                         <Image
                             src={WebIconWhite}
                             alt='Icono de web'
                             width={20}
                             className='sm:w-[25px] md:w-[34px] '
                         />
-                    </a>
+                    </a> */}
+                    <Tooltip text="Ver código 🐱🐙">
+
                     <a href={project?.links?.github} target='_blank'>
                         <Image
                             src={GHIconWhite}
@@ -143,6 +156,7 @@ const ProjectCard = ({ project }) => {
 
                         />
                     </a>
+                    </Tooltip>
 
 
 
