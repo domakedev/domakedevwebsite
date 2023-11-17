@@ -58,7 +58,7 @@ const projects = [ {
         'mongoDb',
         'expressJs',
         'mongoose',
-        'jwt'
+        'jwt',
     ],
     links: {
         github: 'https://github.com/domakedev/Mern-tasks-cliente',

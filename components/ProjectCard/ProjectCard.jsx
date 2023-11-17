@@ -14,14 +14,15 @@ import Tooltip from '../Tooltip/Tooltip'
 
 const ProjectCard = ({ project }) => {
     return (
-        <div className='w-[200px] h-[236px] bg-black rounded-[18px] p-3 flex flex-col items-center justify-between relative
+        <div className='w-[300px] h-[355px] bg-black rounded-[18px] p-3 flex flex-col items-center justify-start gap-2 relative
         
         sm:w-[505px] sm:h-[251px] sm:flex-row-reverse
         
         md:w-[700px] md:h-[348px] md:p-5
         
         '>
-            <a href={project?.links?.web} className='w-[175px] h-[124px] 
+            {/* Imagen */}
+            <a href={project?.links?.web} className='w-[263px] h-[186px] 
                 
                 sm:min-w-[317px] sm:h-[225px]
                 
@@ -37,8 +38,8 @@ const ProjectCard = ({ project }) => {
                 '
                 />
             </a>
-
-            <div className="flex flex-row justify-between w-full h-[82px] 
+            {/* Titulo y techs */}
+            <div className="flex flex-row justify-between w-full h-full 
             
             sm:h-full sm:flex-col-reverse sm:justify-end
 
@@ -50,18 +51,18 @@ const ProjectCard = ({ project }) => {
 
                 md:mt-0
                 ">
-                    <div className=" flex justify-start gap-2
+                    <div className=" flex justify-start gap-2 items-center
                     
                     sm:mb-0
 
                     md:mb-0
                     ">
 
-                        <p className='font-bold text-lg text-white -mt-1 mb-1 
+                        <p className='font-bold text-2xl text-white 
                     
-                    sm:text-3xl sm:mb-0
+                        sm:text-3xl sm:mb-0
 
-                    md:mb-0'>
+                        md:mb-0'>
                             {project?.title}
                         </p>
                         <p
@@ -93,9 +94,9 @@ const ProjectCard = ({ project }) => {
 
 
 
-                    <div className="flex flex-wrap gap-1 max-h-[120px] overflow-y-auto scroll-personalizado
+                    <div className="flex flex-wrap gap-1 max-h-[95px] overflow-y-auto scroll-personalizado
                     
-                    sm:max-h-[60px] sm:mt-[27px] sm:mr-2 sm:items-start
+                    sm:max-h-[60px] sm:mt-[27px] sm:mr- sm:items-start
                     md:mt-0 md:max-h-[100px] md:min-h-[100px]
                     md:items-center md:content-start
                     ">
@@ -104,9 +105,9 @@ const ProjectCard = ({ project }) => {
                         ))}
                     </div>
                 </div>
-                <div className="flex flex-col justify-end items-center gap-2 min-w-[30px] px-[5px]
+                <div className="flex flex-col justify-start items-center gap-2 min-w-[30px] px-[5px]
                 
-                sm:flex-row sm:justify-start sm:pl-0 sm:gap-0
+                sm:flex-row sm:justify-start sm:pl-0 sm:gap-1
                 md:gap-2
 
                 ">
@@ -123,7 +124,7 @@ const ProjectCard = ({ project }) => {
                     </Tooltip>
 
 
-                    <a href={project?.links?.summary} target='_blank'>
+                    {/* <a href={project?.links?.summary} target='_blank'>
                         <Tooltip text="Visitar la app">
                             <Image
                                 src={SummaryIconWhite}
@@ -133,7 +134,7 @@ const ProjectCard = ({ project }) => {
 
                             />
                         </Tooltip>
-                    </a>
+                    </a> */}
 
 
 
@@ -147,15 +148,15 @@ const ProjectCard = ({ project }) => {
                     </a> */}
                     <Tooltip text="Ver código 🐱🐙">
 
-                    <a href={project?.links?.github} target='_blank'>
-                        <Image
-                            src={GHIconWhite}
-                            alt='Icono de web'
-                            width={20}
-                            className='sm:w-[25px] md:w-[34px]'
+                        <a href={project?.links?.github} target='_blank'>
+                            <Image
+                                src={GHIconWhite}
+                                alt='Icono de web'
+                                width={20}
+                                className='sm:w-[25px] md:w-[34px]'
 
-                        />
-                    </a>
+                            />
+                        </a>
                     </Tooltip>
 
 

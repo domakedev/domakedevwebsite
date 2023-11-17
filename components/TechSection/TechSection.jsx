@@ -25,7 +25,7 @@ const TechSection = ({ techsType, children }) => {
             bgFlotanteX: "md:bg-gradient-to-r md:from-black md:from-0% md:to-green to-100%"
         },
         "basics": {
-            title: "Esenciales",
+            title: "Generales",
             "bgCard": "bg-gradient-to-r from-gray from-0% to-black to-100%",
             "bgCard": "bg-gradient-to-r from-black from-0% to-gray to-100%",
             icon: BasicsIcon,
@@ -35,8 +35,8 @@ const TechSection = ({ techsType, children }) => {
     }
 
     return (
-        <div className="flex relative md:w-full md:justify-center">
-            <div className={`w-[284px] h-[450px]  rounded-[18px] ${techsData[ techsType ]?.bgCard}
+        <div className="flex relative md:w-full md:justify-center ">
+            <div className={`w-[284px] h-[450px]  rounded-[18px] ${techsData[ techsType ]?.bgCard} pl-[5px]
             
             md:w-4/5 md:flex md:flex-col md:gap-6 md:rounded-[18px]
             md:h-fit md:p-6
@@ -45,7 +45,7 @@ const TechSection = ({ techsType, children }) => {
             `}>
 
                 {/* /// Titulo */}
-                <div className='flex justify-center gap-4 mt-4 items-center pl-[10px] md:mt-0'>
+                <div className='flex justify-center gap-4 mt-4 items-center pl-[5px]  md:mt-0'>
                     <h2 className='text-white font-bold text-2xl'>{techsData[ techsType ]?.title.toUpperCase()}</h2>
                     <Image
                         src={techsData[ techsType ]?.icon}
@@ -60,7 +60,7 @@ const TechSection = ({ techsType, children }) => {
                 md:w-full md:h-fit md:overflow-y-hidden
                 md:flex md:justify-center md:items-center
                 ">
-                    <div className="mt-[26px] flex flex-col items-center gap-5 
+                    <div className="mt-[26px] flex flex-wrap justify-center items-center gap-5 
                     
                     md:flex-row md:flex-wrap md:w-full md:mt-0 md:justify-center
                     ">

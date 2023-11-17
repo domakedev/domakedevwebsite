@@ -3,10 +3,10 @@ import ProjectCard from '@/components/ProjectCard/ProjectCard'
 import projects from '@/utils/Projects'
 
 const page = () => {
-   
+
 
     return (
-        <div className='self-start flex flex-col items-center'>
+        <div className='self-start flex flex-col items-center px-10'>
             <PageTittle preTitle="Principales" title="Proyectos" />
 
             {/* Lista de proyectos */}

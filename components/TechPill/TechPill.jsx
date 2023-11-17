@@ -75,12 +75,12 @@ const TechPill = ({ techName }) => {
     }, []);
 
     return (
-        <div className={`w-[57px] h-[16px] ${allTechs[ techName ]?.techColor || 'hidden'} flex justify-between px-1 py-[1px] rounded-sm
+        <div className={`w-[70px] h-[20px] ${allTechs[ techName ]?.techColor || 'hidden'} flex justify-between px-1 py-[1px] rounded-sm
         
         sm:w-[70px] sm:h-[20px]
         md:w-[95px] md:h-[27px]
         `}>
-            <p className={`text-[7px] font-bold ${goodContrast ? "text-white" : "text-black"} self-center text-center w-full 
+            <p className={`text-[12px] font-bold ${goodContrast ? "text-white" : "text-black"} self-center text-center w-full 
             
             sm:text-[10px]
             md:text-xs
