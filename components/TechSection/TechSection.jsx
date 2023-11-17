@@ -35,8 +35,8 @@ const TechSection = ({ techsType, children }) => {
     }
 
     return (
-        <div className="flex relative md:w-full md:justify-center ">
-            <div className={`w-[284px] h-[450px]  rounded-[18px] ${techsData[ techsType ]?.bgCard} pl-[5px]
+        <div className="flex relative md:w-full md:justify-center bg-red -ml-[5px]">
+            <div className={`w-[284px] h-[450px]  rounded-[18px] ${techsData[ techsType ]?.bgCard} pl-[5px] bg-yellow
             
             md:w-4/5 md:flex md:flex-col md:gap-6 md:rounded-[18px]
             md:h-fit md:p-6
