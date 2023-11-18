@@ -21,7 +21,7 @@ const projects = [ {
 }, {
     title: 'TIGOD',
     img: TigodImg,
-    active: false,
+    active: true,
     techs: [
         // 'html',
         // 'css',
