@@ -17,6 +17,8 @@ import MongoDBLogo from '@/assets/techs/backend/mongodb.svg'
 import MongooseLogo from '@/assets/techs/backend/mongoose.png'
 import ExpressJsLogo from '@/assets/techs/backend/express.svg'
 import JwtLogo from '@/assets/techs/jwt.svg'
+import EsLintLogo from '@/assets/techs/eslint.svg'
+import PrettierLogo from '@/assets/techs/prettier.svg'
 
 export const logos = {
     html: HTMLLogo,
@@ -141,6 +143,17 @@ const mongoose = {
     techColor: "bg-mongoose"
 }
 
+const esLint = {
+    img: EsLintLogo,
+    techName: 'EsLint',
+    techColor: "bg-esLint"
+}
+const prettier = {
+    img: PrettierLogo,
+    techName: 'Prettier',
+    techColor: "bg-prettier"
+}
+
 const expressJs = {
     img: ExpressJsLogo,
     techName: 'Express',
@@ -172,12 +185,16 @@ export const allTechs = {
     axios,
     expressJs,
     mongoose,
-    jwt
+    jwt,
+    esLint,
+    prettier,
 }
 
 export const basicTechs = [
     javascript,
-    git
+    git,
+    esLint,
+    prettier,
 ]
 
 export const frontendTechs = [

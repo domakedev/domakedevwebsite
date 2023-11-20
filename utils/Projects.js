@@ -1,6 +1,7 @@
 import TigodImg from "@/assets/projects/tigod.png"
 import PortafolioImg from "@/assets/projects/portafolio.png"
-import MERNTasks from "@/assets/projects/mern-tasks.png"
+import MERNTasksImg from "@/assets/projects/mern-tasks.png"
+import ZupportImg from "@/assets/projects/zupport.png"
 
 const projects = [ {
     title: 'Portafolio',
@@ -44,7 +45,7 @@ const projects = [ {
     }
 }, {
     title: 'Tasks',
-    img: MERNTasks,
+    img: MERNTasksImg,
     active: true,
     techs: [
         'html',
@@ -63,6 +64,31 @@ const projects = [ {
     links: {
         github: 'https://github.com/domakedev/Mern-tasks-cliente',
         web: 'https://merntasks-cliente-domakedev.netlify.app/',
+        summary: ""
+    }
+}, , {
+    title: 'Zupport',
+    img: ZupportImg,
+    active: true,
+    techs: [
+        'html',
+        'css',
+        'git',        
+        'esLint',
+        'prettier',
+        'react',
+        'javascript',
+        'redux',
+        'axios',
+        'nodeJs',
+        'mongoDb',
+        'expressJs',
+        'mongoose',
+        'jwt',
+    ],
+    links: {
+        github: 'https://github.com/domakedev/zupport-cliente/tree/dev',
+        web: 'https://zupport.netlify.app/',
         summary: ""
     }
 } ]

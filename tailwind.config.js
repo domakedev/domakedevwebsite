@@ -45,7 +45,9 @@ module.exports = {
       "jest": "#99425B",
       "styled-components": "#DB7093",
       "axios": "#671ddf",
-      "jwt": "#000"
+      "jwt": "#000",
+      "esLint": "#4B32C3",
+      "prettier": "#F7B93E",
 
     },
   },
