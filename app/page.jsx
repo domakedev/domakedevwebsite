@@ -42,7 +42,7 @@ export default function Home() {
         {/* // CallToAction */}
         <div className="w-screen mx-auto sm:w-fit p-5 mt-[10px] lg:row-span-1 lg:p-0">
           <p className="text-sm lg:text-xl text-left lg:max-w-[444px]">
-            Me especializo programar el lado visual de aplicaciones web.
+            Me especializo en programar el lado visual de las aplicaciones web.
             <br />
             <br />
             Te invito a conocer mis proyectos.
