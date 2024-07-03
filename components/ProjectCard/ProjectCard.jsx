@@ -40,16 +40,17 @@ const ProjectCard = ({ project }) => {
       </a>
       {/* Titulo y techs */}
       <div
-        className="flex flex-row justify-between w-full h-full             
+        className="flex flex-row justify-between w-full h-full        
             sm:h-full sm:flex-col-reverse sm:justify-end
-            md:justify-between"
+            md:justify-end"
       >
         <div
-          className="flex flex-col w-full h-full gap-2                
+          className="flex flex-col w-full h-full gap-2              
                 sm:h-auto sm:gap-0 sm:mt-[57px]
                 md:mt-0"
         >
-          <div className="flex justify-start gap-2 items-start sm:mb-0 md:mb-0">
+          {/*  */}
+          <div className="flex justify-start gap-2 items-start sm:mb-0 md:mb-0 sm:-mt-9 md:mt-10">
             <p className="text-white mb-5 sm:mb-1 flex flex-col gap-1">
               <span className="font-bold text-2xl sm:text-3xl ">
                 {project?.title}
@@ -80,10 +81,10 @@ const ProjectCard = ({ project }) => {
           </button> */}
 
           <div
-            className="flex flex-wrap gap-1  overflow-y-auto scroll-personalizado
+            className="flex flex-wrap gap-1  overflow-y-auto scroll-personalizado 
                     
-                    sm:max-h-[55px] sm:mt-[27px] sm:mr- sm:items-start
-                    md:mt-0 md:max-h-[100px] md:min-h-[100px]
+                    sm:max-h-[105px] sm:mt-[27px] sm:mr- sm:items-start
+                    md:mt-0 md:max-h-[144px] md:min-h-[100px]
                     md:items-center md:content-start
                     "
           >
@@ -95,14 +96,16 @@ const ProjectCard = ({ project }) => {
             ))}
           </div>
         </div>
+        {/* Top of Card in Large */}
         <div
-          className="flex flex-col justify-start items-center gap-2 min-w-[30px] px-[5px]
+          className="flex flex-col justify-start items-center gap-2 min-w-[30px] px-[5px] 
                 
                 sm:flex-row sm:justify-start sm:pl-0 sm:gap-1
                 md:gap-2
 
                 "
         >
+          {/* PRoject status */}
           <Tooltip
             text={
               project?.active ? "Puedes usar la app ✅" : "En mantenimiento 🧹"
@@ -120,27 +123,7 @@ const ProjectCard = ({ project }) => {
               {project?.active ? "Online" : "Offline"}
             </p>
           </Tooltip>
-
-          {/* <a href={project?.links?.summary} target='_blank'>
-                        <Tooltip text="Visitar la app">
-                            <Image
-                                src={SummaryIconWhite}
-                                alt='Icono de web'
-                                width={20}
-                                className='hidden'
-
-                            />
-                        </Tooltip>
-                    </a> */}
-
-          {/* <a href={project?.links?.web} target='_blank'>
-                        <Image
-                            src={WebIconWhite}
-                            alt='Icono de web'
-                            width={20}
-                            className='sm:w-[25px] md:w-[34px] '
-                        />
-                    </a> */}
+          {/* Proyect Ver Codigo */}
           <Tooltip text="Ver código 🐱🐙">
             <a
               href={project?.links?.github}

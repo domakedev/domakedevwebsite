@@ -72,7 +72,7 @@ const projects = [
     title: "Zupport",
     img: ZupportImg,
     active: false,
-    description: "🗺️Plataforma para crear comunidades y responder consultas.",
+    description: "🗺️Plataforma para crear comunidades y ayudar.",
     techs: [
       "html",
       "css",
