@@ -48,6 +48,8 @@ module.exports = {
       "jwt": "#000",
       "esLint": "#4B32C3",
       "prettier": "#F7B93E",
+      "prisma": "#2D3748",
+      "postgresql": "#336791",
 
     },
   },
