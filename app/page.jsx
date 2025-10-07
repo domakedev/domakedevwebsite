@@ -33,19 +33,17 @@ export default function Home() {
 
         {/* // Career */}
         <div className="flex justify-center flex-col lg:justify-start text-base lg:text-2xl mt-[28px] lg:row-span-1 lg:mb-10">
-          <h2 className="text-light-blue font-bold">Programador Frontend</h2>
+          <h2 className="text-slate-700 font-bold">Fullstack Developer</h2>
           {/* <span className="text-green font-bold">/</span>
           <span className="text-light-blue font-bold">/</span> */}
-          <h2 className="text-green font-bold">Ing. Electrónico</h2>
+          <h2 className="text-react-js">Frontend Specialist</h2>
         </div>
 
         {/* // CallToAction */}
-        <div className="w-screen mx-auto sm:w-fit p-5 mt-[10px] lg:row-span-1 lg:p-0">
+        <div className="w-screen lg:mx-0 sm:w-fit p-5 mt-[10px] lg:row-span-1 lg:p-0">
           <p className="text-sm lg:text-xl text-left lg:max-w-[444px]">
-            Me especializo en programar el lado visual de las aplicaciones web.
+            Creo aplicaciones web de inicio a fin.
             <br />
-            <br />
-            Te invito a conocer mis proyectos.
           </p>
           <Link
             href="/proyectos"

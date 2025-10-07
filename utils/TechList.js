@@ -21,6 +21,7 @@ import EsLintLogo from "@/assets/techs/eslint.svg";
 import PrettierLogo from "@/assets/techs/prettier.svg";
 import PostgreSQLLogo from "@/assets/techs/backend/postgresql.svg";
 import PrismaLogo from "@/assets/techs/backend/prisma.svg";
+import Firebase from "@/assets/techs/backend/firebase.svg";
 
 export const logos = {
   html: HTMLLogo,
@@ -180,6 +181,12 @@ const prisma = {
   techColor: "bg-prisma",
 };
 
+const firebase = {
+  img: Firebase,
+  techName: "Firebase",
+  techColor: "bg-firebase",
+};
+
 export const allTechs = {
   javascript,
   git,
@@ -204,6 +211,7 @@ export const allTechs = {
   prettier,
   postgresql,
   prisma,
+  firebase,
 };
 
 export const basicTechs = [javascript, git, esLint, prettier];
@@ -234,4 +242,5 @@ export const backendTechs = [
   jwt,
   postgresql,
   prisma,
+  firebase,
 ];

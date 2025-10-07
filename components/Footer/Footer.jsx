@@ -3,12 +3,9 @@ import "./footer.css"
 
 const Footer = () => {
   return (
-    <footer className='footer text-base'>
-      <p className='footer-text-large'>
-        🐶 Desarrollando software con pasión © 2023 🔩
-      </p>
-      <p className='footer-text-small'>
-        🐶 Hecho con pasión © 2023 💻
+    <footer className='footer text-base p-1'>
+      <p>
+        💻 Desarrollando software con pasión desde el 2020 🦾
       </p>
     </footer>
   )

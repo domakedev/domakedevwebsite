@@ -3,6 +3,8 @@ import PortafolioImg from "@/assets/projects/portafolio.png";
 import MERNTasksImg from "@/assets/projects/mern-tasks.png";
 import ZupportImg from "@/assets/projects/zupport.png";
 import RepasoActivo from "@/assets/projects/repaso-activo.png";
+import Dejardejugarlol from "@/assets/projects/dejardejugarlol.png";
+import Tokitask from "@/assets/projects/tokitask.png";
 
 const projects = [
   //   {
@@ -99,7 +101,7 @@ const projects = [
     title: "Repaso Activo",
     img: RepasoActivo,
     active: true,
-    description: "📚Plataforma para repasar activamente y crear apuntes.",
+    description: "📚Plataforma para estudiar y crear apuntes.",
     techs: [
       "html",
       "css",
@@ -113,11 +115,55 @@ const projects = [
       "redux",
       "jwt",
       "postgresql",
-      "prisma"
+      "prisma",
     ],
     links: {
       github: "https://github.com/domakedev/recallcards-frontend",
       web: "https://www.repasoactivo.com/",
+      summary: "",
+    },
+  },
+  {
+    title: "dejardejugarlol",
+    img: Dejardejugarlol,
+    active: true,
+    description: "🎮 App para controlar el tiempo de juego.",
+    techs: [
+      "html",
+      "css",
+      "git",
+      "javascript",
+      "react",
+      "nextJs",
+      "tailwindCss",
+      "typescript",
+      "firebase"
+    ],
+    links: {
+      github: "https://github.com/domakedev/afk-lol",
+      web: "https://www.dejardejugarlol.com/",
+      summary: "App para controlar el tiempo de juego en League of Legends.",
+    },
+  },
+  {
+    title: "TokiTask",
+    img: Tokitask,
+    active: true,
+    description: "⌛Organiza tu tiempo y rastrea hábitos",
+    techs: [
+      "html",
+      "css",
+      "git",
+      "javascript",
+      "react",
+      "nextJs",
+      "tailwindCss",
+      "typescript",
+      "firebase"
+    ],
+    links: {
+      github: "https://github.com/domakedev/tokitask",
+      web: "https://www.tokitask.com/",
       summary: "",
     },
   },
