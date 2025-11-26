@@ -123,28 +123,28 @@ const projects = [
       summary: "",
     },
   },
-  {
-    title: "dejardejugarlol",
-    img: Dejardejugarlol,
-    active: true,
-    description: "🎮 App para controlar el tiempo de juego.",
-    techs: [
-      "html",
-      "css",
-      "git",
-      "javascript",
-      "react",
-      "nextJs",
-      "tailwindCss",
-      "typescript",
-      "firebase"
-    ],
-    links: {
-      github: "https://github.com/domakedev/afk-lol",
-      web: "https://www.dejardejugarlol.com/",
-      summary: "App para controlar el tiempo de juego en League of Legends.",
-    },
-  },
+  // {
+  //   title: "dejardejugarlol",
+  //   img: Dejardejugarlol,
+  //   active: true,
+  //   description: "🎮 App para controlar el tiempo de juego.",
+  //   techs: [
+  //     "html",
+  //     "css",
+  //     "git",
+  //     "javascript",
+  //     "react",
+  //     "nextJs",
+  //     "tailwindCss",
+  //     "typescript",
+  //     "firebase"
+  //   ],
+  //   links: {
+  //     github: "https://github.com/domakedev/afk-lol",
+  //     web: "https://www.dejardejugarlol.com/",
+  //     summary: "App para controlar el tiempo de juego en League of Legends.",
+  //   },
+  // },
   {
     title: "TokiTask",
     img: Tokitask,
